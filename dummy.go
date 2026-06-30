@@ -17,15 +17,4 @@ func fibonacci(c, quit chan int) {
 	}
 }
 
-func main() {
-	c := make(chan int)
-	quit := make(chan int)
-	go func() {
-		for range 10 {
-			fmt.Println(<-c)
-		}
-		quit <- 0
-	}()
-
-	fibonacci(c, quit)
-}
+func main()
