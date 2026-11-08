@@ -29,7 +29,7 @@ package maximumnumberofballsinabox
 
 // O(n) time, O(1) space
 func countBalls(lowLimit int, highLimit int) int {
-	var box [46]int // sum 9999=45
+	var box [46]int // max digit sum: 99999 = 45
 	maxVal := 0
 	for i := lowLimit; i <= highLimit; i++ {
 		sum := sumDigits(i)
