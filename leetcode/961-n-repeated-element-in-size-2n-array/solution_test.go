@@ -8,26 +8,25 @@ import (
 
 func TestRepeatedNTimes(t *testing.T) {
 	tests := []struct {
-		name string
 		nums []int
 		want int
 	}{
-		{"example 1", []int{1, 2, 3, 3}, 3},
-		{"example 2", []int{2, 1, 2, 5, 3, 2}, 2},
-		{"example 3", []int{5, 1, 5, 2, 5, 3, 5, 4}, 5},
-		{"adjacent at start", []int{4, 4, 1, 2}, 4},
-		{"split to both ends", []int{7, 1, 2, 7}, 7},
-		{"clustered at end", []int{1, 2, 3, 4, 1, 1}, 1},
-		{"repeated value is zero", []int{0, 1, 2, 0}, 0},
-		{"max element value", []int{10000, 1, 10000, 2}, 10000},
-		{"alternating", []int{1, 2, 1, 3, 1, 4}, 1},
+		{[]int{1, 2, 3, 3}, 3},
+		{[]int{2, 1, 2, 5, 3, 2}, 2},
+		{[]int{5, 1, 5, 2, 5, 3, 5, 4}, 5},
+		{[]int{4, 4, 1, 2}, 4},
+		{[]int{7, 1, 2, 7}, 7},
+		{[]int{1, 2, 3, 4, 1, 1}, 1},
+		{[]int{0, 1, 2, 0}, 0},
+		{[]int{10000, 1, 10000, 2}, 10000},
+		{[]int{1, 2, 1, 3, 1, 4}, 1},
 	}
 
 	for _, tt := range tests {
 		in := slices.Clone(tt.nums)
 		got := repeatedNTimes(tt.nums)
 		if got != tt.want {
-			t.Errorf("%s: repeatedNTimes(%v) = %d, want %d", tt.name, in, got, tt.want)
+			t.Errorf("repeatedNTimes(%v) = %d, want %d", in, got, tt.want)
 		}
 	}
 }
