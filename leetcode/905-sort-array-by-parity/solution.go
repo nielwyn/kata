@@ -13,7 +13,7 @@
 
 package sortarraybyparity
 
-// O(n) time, 0(1) space
+// O(n) time, O(1) space
 func sortArrayByParity(nums []int) []int {
 	left := 0
 	right := len(nums) - 1

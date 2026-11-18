@@ -9,7 +9,7 @@
 
 package longpressedname
 
-// O(n+m) time, O(1) space
+// O(m) time, O(1) space (m = len(typed))
 func isLongPressedName(name string, typed string) bool {
 	np, tp := 0, 0
 	for tp < len(typed) {

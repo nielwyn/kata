@@ -25,7 +25,7 @@ package longestsubsequencewithlimitedsum
 
 import "slices"
 
-// O(n log n + m log n ) time, O(n) space
+// O(n log n + m log n) time, O(n) space (n = len(nums), m = len(queries))
 func answerQueries(nums []int, queries []int) []int {
 	slices.Sort(nums)
 	prefix := make([]int, len(nums))

@@ -19,7 +19,7 @@
 
 package binarysearch
 
-// O(log n ) time, O(1) space
+// O(log n) time, O(1) space
 func search(nums []int, target int) int {
 	left, right := 0, len(nums)-1
 	for left <= right {

@@ -16,7 +16,7 @@
 
 package intersectionoftwoarrays
 
-// O(n+m) time, O(n) space
+// O(n+m) time, O(n+m) space
 // func intersection(nums1 []int, nums2 []int) []int {
 // 	inNums1 := make(map[int]bool, len(nums1))
 // 	added := make(map[int]bool, len(nums2))
